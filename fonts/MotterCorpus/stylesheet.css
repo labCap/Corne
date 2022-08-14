@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Motter Corpus Std";
+  src: url("MotterCorpusStd-Regular.eot");
+  src: local("Motter Corpus Std"), local("MotterCorpusStd-Regular"),
+    url("MotterCorpusStd-Regular.eot?#iefix") format("embedded-opentype"),
+    url("MotterCorpusStd-Regular.woff2") format("woff2"),
+    url("MotterCorpusStd-Regular.woff") format("woff"),
+    url("MotterCorpusStd-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
