@@ -1,14 +1,17 @@
 .intro {
   background: url("../img/inrto-bg.png") no-repeat bottom center;
-  height: 100vh;
   overflow: hidden;
 }
 
 .intro__inner {
+  height: 100vh;
   padding: 200px 0 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -87,4 +90,22 @@
   -webkit-transition: all 0.5s ease 0.1s;
   -o-transition: all 0.5s ease 0.1s;
   transition: all 0.5s ease 0.1s;
+}
+
+@media (max-width: 768px) {
+  .intro__text {
+    font-size: 80px;
+    line-height: 90px;
+  }
+
+  .intro__img img {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 425px) {
+  .intro__text {
+    font-size: 50px;
+    line-height: 65px;
+  }
 }

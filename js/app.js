@@ -1,4 +1,14 @@
 const animItems = document.querySelectorAll(".__anim-items");
+const menuBox = document.querySelector(".header__box-menu");
+const menuBtn = document.querySelector(".burger");
+const body = document.querySelector("body");
+
+menuBtn.addEventListener("click", showMenu);
+function showMenu() {
+  menuBox.classList.toggle("__active");
+  menuBtn.classList.toggle("__active");
+  body.classList.toggle("__lock");
+}
 
 if (animItems.length > 0) {
   window.addEventListener("scroll", animOnScroll);

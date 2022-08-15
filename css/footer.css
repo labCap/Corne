@@ -54,6 +54,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 -24px;
 }
 
@@ -66,7 +68,7 @@
   border: 2px solid #ffccbc;
   border-radius: 100px;
   padding: 11px 76px;
-  margin: 0 24px;
+  margin: 0 24px 20px;
   -webkit-transition: all 0.2s linear 0s;
   -o-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
@@ -134,4 +136,17 @@
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .footer__inner {
+    padding: 100px 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }

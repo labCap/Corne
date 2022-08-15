@@ -5,13 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
-  <link
     href="fonts/MotterCorpus/stylesheet.css"
     rel="stylesheet"
     type="text/css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
   />
   <link href="fonts/icons-v1.0/style.css" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="img/favicon.svg" type="image/svg" />
@@ -26,14 +26,21 @@
       <header class="header">
   <div class="container">
     <div class="header__inner">
-      <div class="header__box"><div class="header__logo">Cornelia</div></div>
       <div class="header__box">
+        <a href="#" class="header__logo">Cornelia</a>
+      </div>
+      <div class="header__box header__box-menu">
         <nav class="nav">
           <a href="#" class="nav__link">Learn</a>
           <a href="#" class="nav__link">About</a>
           <a href="#" class="nav__link">Why</a>
         </nav>
         <a href="#" class="header__btn">Download</a>
+      </div>
+      <div class="burger">
+        <div class="burger__item"></div>
+        <div class="burger__item"></div>
+        <div class="burger__item"></div>
       </div>
     </div>
   </div>
@@ -408,7 +415,7 @@
                 </div>
               </div>
               <div class="detail__item">
-                <div class="detail__box detail__box-img">
+                <div class="detail__box detail__box-img detail__box-img-horse">
                   <img
                     class="detail__img-horse __anim-items"
                     src="img/detail-img-horse.png"
